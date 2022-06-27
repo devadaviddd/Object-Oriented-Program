@@ -4,9 +4,6 @@
 
 import java.util.Scanner;
 
-<<<<<<< HEAD
-
-
 public class Modulus5Or6 {
     //3. Write a program that displays all the numbers from 100 to 200, ten numbers per line,
     //   that are divisible by 5 or 6, but not both. Numbers are separated by exactly one space.
@@ -30,12 +27,6 @@ public class Modulus5Or6 {
         Scanner myObj = new Scanner(System.in);
         int input;
         Display();
-=======
-public class Modulus5Or6 {
-    public static void main(String[] args) {
-        Scanner myObj = new Scanner(System.in);
-        int input;
->>>>>>> 12e8afe5a9ef932a8853cafe6c130f404ac02020
         do {
             System.out.print("Enter a positive integer: ");
             input = myObj.nextInt();
