@@ -16,6 +16,8 @@ public class Ascending_Order {
         System.out.print("Enter num3: ");
         num3 = myObj.nextInt();
 
+
+
         int[] arr = {num1, num2, num3};
         for(int i = 0; i < arr.length; i++) {
             for(int j = i; j < arr.length - 1; j++) {
