@@ -26,14 +26,13 @@ public class Two_Circle {
         circle2Y = myobj.nextDouble();
         radius2 = myobj.nextDouble();
 
-        double distance = Math.sqrt(Math.pow((circle2X - circle1X), 2) + Math.pow((circle2Y - circle2X), 2));
+        double distance = Math.sqrt(Math.pow((circle2X - circle1X), 2) + Math.pow((circle2Y - circle1Y), 2));
 
         if(distance <= Math.abs(radius1 - radius2)) {
             System.out.println("circle2 is inside circle1");
         } else if(distance <= radius1 + radius2) {
             System.out.println("circle2 is overlap circle");
         }
-
 
     }
 }

@@ -9,6 +9,9 @@ public class PyramidOfLine {
         System.out.print("Enter the number of lines: ");
         int lines;
         lines = newobj.nextInt();
+        if(lines < 1 || lines > 15) {
+            return;
+        }
 
         for(int i = 1; i <= lines; i++) {
             for(int space = i; space <= lines; space++) {
