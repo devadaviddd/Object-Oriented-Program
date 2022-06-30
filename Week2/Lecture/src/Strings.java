@@ -34,7 +34,13 @@ public class Strings {
         hello = "323";
         System.out.println(hello);
 
-
+        //Regular Expressions (regex)
+        String s1 = "Java is fun";
+        String s2 = "Java is cool";
+        String regex = ".*[a-z].*";
+        System.out.println(s1.matches(regex));
+        System.out.println(s2.matches(regex));
+        System.out.println(regex);
 
     }
 }

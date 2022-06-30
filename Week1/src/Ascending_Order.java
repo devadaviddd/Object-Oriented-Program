@@ -16,10 +16,10 @@ public class Ascending_Order {
         ArrayList<Integer> arr = new ArrayList<Integer>();
         for(int i = 0; i < 3; i++) {
             System.out.print("Enter num" + i + ": ");
-            arr.add(myObj.nextInt());
+            arr.add(myObj.nextInt()); // 5 3 4
         }
 
-        Collections.sort(arr); //Collections.reverseOrder() --> descending
+        Collections.sort(arr); //Collections.reverseOrder() --> descending // 3 4 5
         for(int i = 0; i < arr.size(); i++) {
             System.out.print(arr.get(i) + ", ");
         }
