@@ -4,6 +4,11 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Scanner;
 
+/* Write a program that prompts the user to enter a year and a string of three characters
+for a month name (with the first letter in uppercase) then displays the number of days in
+the month. If the user enters an invalid value for year or month, print out a helpful error
+message.*/
+
 public class Month_Year_Days {
     /*static String[] Months = {
         "JAN", "FEB", "MAR", "APR", "MAY", "JUNE", "JULY", "AUG", "SEP", "OCT", "NOV", "DEC",
