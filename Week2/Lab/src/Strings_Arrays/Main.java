@@ -24,7 +24,7 @@ public class Main {
             System.out.println(str + " isn't Palindrome");
         }*/
 
-        Sorted_List ex5 = new Sorted_List();
+        /*Sorted_List ex5 = new Sorted_List();
         while(true) {
             System.out.print("Enter list: ");
             str = scanner.nextLine();
@@ -38,7 +38,17 @@ public class Main {
                 System.out.println("The list is not sorted");
             }
 
-        }
+        }*/
+
+        Count_100_Integers ex6 = new Count_100_Integers();
+        ex6.count();
+
+        Average_Score ex7 = new Average_Score();
+        System.out.print("Input: ");
+        str = scanner.nextLine();
+        ex7.aboveBelowAverage(str);
+
+
 
     }
 }
