@@ -15,7 +15,7 @@ public class Month_Year_Days {
     };
     */
 
-    public static boolean leapYear(int year) {
+    boolean leapYear(int year) {
         boolean isLeapYear = ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0));
         if (isLeapYear) {
             return true;
@@ -24,7 +24,7 @@ public class Month_Year_Days {
         }
     }
 
-    public static void monthYearsDays() {
+    void monthYearsDays() {
         Scanner scanner = new Scanner(System.in);
         int year;
         int days;

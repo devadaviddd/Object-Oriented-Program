@@ -6,7 +6,7 @@ import java.util.*;
 ascending order. Sample run:*/
 
 public class Cities_Sorting {
-    public static void citiesSorting() {
+    void citiesSorting() {
         Scanner scanner = new Scanner(System.in);
         HashSet<String> cities = new HashSet<String>();
         System.out.print("Enter the first city: ");

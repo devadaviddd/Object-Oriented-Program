@@ -3,7 +3,7 @@ package Strings_Arrays;
 import java.util.HashSet;
 
 public class Distinct_Num {
-    public static boolean distinctNum(String str) {
+    boolean distinctNum(String str) {
         String[] strArray = null;
         strArray = str.split(" ");
 

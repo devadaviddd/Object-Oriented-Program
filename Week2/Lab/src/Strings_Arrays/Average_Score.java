@@ -4,7 +4,7 @@ package Strings_Arrays;
 determines how many scores are above or equal to the average and how many scores
 are below the average.*/
 public class Average_Score {
-    public static void aboveBelowAverage(String str) {
+    void aboveBelowAverage(String str) {
         String[] strArr = null;
         strArr = str.split(" ");
         double[] scores = new double[strArr.length];

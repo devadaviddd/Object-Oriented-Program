@@ -12,6 +12,7 @@ public class Main {
         Cities_Sorting ex2 = new Cities_Sorting();
         ex2.citiesSorting();
 
+
         Reserve_String ex3 = new Reserve_String();
         System.out.print("Enter a String: ");
         str = scanner.nextLine();
@@ -57,7 +58,6 @@ public class Main {
         System.out.print("Enter ten numbers: ");
         str = scanner.nextLine();
         ex9.occurences(str);
-
 
     }
 }

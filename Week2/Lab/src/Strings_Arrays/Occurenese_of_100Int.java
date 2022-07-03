@@ -3,7 +3,7 @@ package Strings_Arrays;
 import java.util.*;
 
 public class Occurenese_of_100Int {
-    public static void occurences(String str) {
+    void occurences(String str) {
         String[] strArray = null;
         strArray = str.split(" ");
 

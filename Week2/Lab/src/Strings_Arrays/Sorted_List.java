@@ -7,7 +7,7 @@ program should prompt the user to enter a list and displays whether the list is 
 ascending order or not. Note that the first number in the input indicates the number of
 the elements in the list. The program exits when the first number is 0.*/
 public class Sorted_List {
-    public static boolean isSortedList(String str) {
+    boolean isSortedList(String str) {
         // Convert str to String Arr
         String[] strArray = null;
         strArray = str.split(" ");

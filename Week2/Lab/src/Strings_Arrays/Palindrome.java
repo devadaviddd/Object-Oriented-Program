@@ -7,7 +7,7 @@ palindromes. Write a method that checks if a given string is a palindrome or not
 use the method in the last exercise*/
 
 public class Palindrome {
-    public static boolean isPalindrome(String str) {
+    boolean isPalindrome(String str) {
         String filter = str.toLowerCase().replaceAll("\\s", "").replaceAll(
                 "\\p{P}", ""
         );
