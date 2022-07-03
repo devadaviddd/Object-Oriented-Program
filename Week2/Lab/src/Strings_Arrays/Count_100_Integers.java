@@ -8,7 +8,7 @@ count for each number. Hint: use the method Math.random().*/
 public class Count_100_Integers {
     public static void count() {
         int minimum = 0;
-        int maximum = 100;
+        int maximum = 10;
         int[] arrNum = new int[100];
         for(int i = 0; i < arrNum.length; i++) {
             int randomNum = minimum + (int)(Math.random() * maximum);
@@ -21,7 +21,18 @@ public class Count_100_Integers {
             arrCount[arrNum[i]] += 1;
         }
 
-        System.out.println(Arrays.toString(arrCount));
+        int[] arrDisplay = new int[10];
+        for(int i = 0; i < arrDisplay.length; i++) {
+            arrDisplay[i] = arrCount[i];
+        }
+        int index = 0;
+        for(int each : arrDisplay) {
+            System.out.println(index + " occurs " + each + ((each > 1)? " times": " time"));
+            index++;
+        }
 
+        System.out.println(Arrays.toString(arrNum));
+        System.out.println(Arrays.toString(arrCount));
+        System.out.println(Arrays.toString(arrDisplay));
     }
 }

@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String str;
-        Month_Year_Days ex1 = new Month_Year_Days();
+        /*Month_Year_Days ex1 = new Month_Year_Days();
         ex1.monthYearsDays();
 
         Cities_Sorting ex2 = new Cities_Sorting();
@@ -22,9 +22,9 @@ public class Main {
             System.out.println(str + " is Palindrome");
         } else {
             System.out.println(str + " isn't Palindrome");
-        }
+        }*/
 
-        Sorted_List ex5 = new Sorted_List();
+        /*Sorted_List ex5 = new Sorted_List();
         while(true) {
             System.out.print("Enter list: ");
             str = scanner.nextLine();
@@ -38,7 +38,7 @@ public class Main {
                 System.out.println("The list is not sorted");
             }
 
-        }
+        }*/
 
         Count_100_Integers ex6 = new Count_100_Integers();
         ex6.count();
