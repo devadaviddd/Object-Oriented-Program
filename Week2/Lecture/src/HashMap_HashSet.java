@@ -1,5 +1,7 @@
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class HashMap_HashSet {
     // A HashMap object stores an unorder collection of items in "key-value" pairs of object data types
@@ -25,6 +27,11 @@ public class HashMap_HashSet {
         capitalCities.clear();
         System.out.println(capitalCities);
 
+        System.out.println("Loop the HashMap by key");
+        for(String ele : capitalCities.keySet()) {
+            System.out.println(ele);
+        }
+
         // HashSet object stores an unorder
         HashSet<String> cars = new HashSet<String>();
         cars.add("Audi");
@@ -40,5 +47,8 @@ public class HashMap_HashSet {
         for(String car : cars) {
             System.out.println(car);
         }
+
+        /* TreeMap --> order sorted of HashMap*/
+        Map<String, String>  hashTree = new LinkedHashMap<String, String>();
     }
 }
