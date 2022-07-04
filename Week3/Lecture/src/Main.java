@@ -26,7 +26,7 @@ class is hidden from other classes*/
         System.out.println(person.getName()); /* get method to get the value*/
 
         /* Class Relationships*/
-        /* 1. Dependency */
+        /* 1. Composition */
         Product pro1 = new Product("iPhone", 34.5, 1);
         Product pro2 = new Product("iPhone", 34.5, 1);
         Cart cart1 = new Cart();
