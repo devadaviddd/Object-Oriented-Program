@@ -11,6 +11,9 @@ public class Reserve_String {
             char ch = str.charAt(i); // extracts each character
             revStr = ch + revStr;
         }
+
+        /* Stack --> Algorithm Data: push first element then be the final element/*/
         return  revStr;
+
     }
 }

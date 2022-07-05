@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String str;
+
         Month_Year_Days ex1 = new Month_Year_Days();
         ex1.monthYearsDays();
 
