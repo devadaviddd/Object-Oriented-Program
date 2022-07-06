@@ -6,6 +6,18 @@ public class Hamburger {
 
     private Addition add;
 
+    public Hamburger(String name, String breadRollType) {
+        this.meat = name;
+        this.breadRollType = breadRollType;
+    }
+
+    public Hamburger(String meat, double price) {
+        this.meat = meat;
+        this.price = price;
+        System.out.println(this.name + " hamburger on a " + this.breadRollType +
+                " roll with " + this.meat + ", " + "price is " + this.price);
+    }
+
     public Hamburger(String name, String meat, double price, String breadRollType) {
         this.name = name;
         this.meat = meat;
