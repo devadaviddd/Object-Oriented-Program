@@ -54,14 +54,23 @@ public class Main {
         }*/
 
         /* Question 4*/
-        LinearEquation linearEquation = new LinearEquation(3, 2, 1, 5, 5, 3);
+        /*LinearEquation linearEquation = new LinearEquation(3, 2, 1, 5, 5, 3);
         if(linearEquation.isSolvable()) {
             System.out.println("X = " + linearEquation.getX());
             System.out.println("Y = " + linearEquation.getY());
         } else {
             System.out.println("The equation has no solution");
         }
+*/
+        GregorianCalendar cal = new GregorianCalendar();
+        System.out.println("Current year: " + cal.get(GregorianCalendar.YEAR) +
+                " Current month: " + cal.get(GregorianCalendar.MONTH) +
+                " Current day: " + cal.get(GregorianCalendar.DAY_OF_MONTH));
 
+        cal.setTimeInMillis(1234567898765L);
+        System.out.println("Current year: " + cal.get(GregorianCalendar.YEAR) +
+                " Current month: " + cal.get(GregorianCalendar.MONTH) +
+                " Current day: " + cal.get(GregorianCalendar.DAY_OF_MONTH));
 
 
     }
