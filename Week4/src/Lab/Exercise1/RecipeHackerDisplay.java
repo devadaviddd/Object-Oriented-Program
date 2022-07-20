@@ -13,13 +13,13 @@ public class RecipeHackerDisplay extends RecipeDisplay{
     }
 
     @Override
-    public void display() {
+    public void display(Separator separator) {
         System.out.println("Hacker Display: ");
         List<RecipeComponent> list = new ArrayList<RecipeComponent>(super.getRecipe().getArrOfComponent());
         Collections.sort(list, new RecipeComponentByDigits());
         for(RecipeComponent rc : list) {
             System.out.println(rc.toString());
-            System.out.println("------");
+            separator.display();
         }
 
     }

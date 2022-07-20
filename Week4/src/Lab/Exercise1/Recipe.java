@@ -1,5 +1,7 @@
 package Lab.Exercise1;
 
+import Lab.Exercise1.RecipeComponent;
+
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Scanner;
@@ -43,7 +45,6 @@ public class Recipe {
         System.out.println(name + " (Recipe)");
         for(RecipeComponent rc : arrOfComponent) {
             System.out.println(rc);
-            System.out.println("--------");
         }
     }
 

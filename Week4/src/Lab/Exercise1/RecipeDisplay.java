@@ -10,7 +10,7 @@ public abstract  class RecipeDisplay {
         this.recipe = recipe;
     }
 
-    public void display() {
+    public void display(Separator separator) {
         recipe.display();
     }
 

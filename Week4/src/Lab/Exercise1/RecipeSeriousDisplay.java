@@ -14,13 +14,13 @@ public class RecipeSeriousDisplay extends RecipeDisplay{
     }
 
     @Override
-    public void display() {
+    public void display(Separator separator) {
         System.out.println("Serious Display: ");
         List<RecipeComponent> list = new ArrayList<RecipeComponent>(super.getRecipe().getArrOfComponent());
         Collections.sort(list, new RecipeComponentByAmount());
         for(RecipeComponent rc: list) {
             System.out.println(rc.toString());
-            System.out.println("-----");
+            separator.display();
         }
     }
 }

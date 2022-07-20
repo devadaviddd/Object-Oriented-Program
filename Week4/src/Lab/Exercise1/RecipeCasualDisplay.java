@@ -10,11 +10,11 @@ public class RecipeCasualDisplay extends RecipeDisplay{
     }
 
     @Override
-    public void display() {
+    public void display(Separator separator) {
         System.out.println("Casual Display: ");
         for(RecipeComponent rc : super.getRecipe().getArrOfComponent()) {
             System.out.println(rc);
-            System.out.println("------");
+            separator.display();
         }
     }
 }

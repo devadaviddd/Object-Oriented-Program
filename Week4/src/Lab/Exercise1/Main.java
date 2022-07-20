@@ -1,5 +1,9 @@
 package Lab.Exercise1;
 
+
+import Lab.Exercise1.*;
+import Lab.Exercise1.Recipe;
+
 import java.util.HashSet;
 import java.util.Scanner;
 
@@ -18,34 +22,53 @@ public class Main {
 
 
         Recipe recipe = new Recipe("scone", listOfComponents);
+        int[] choice = new int[1];
+        System.out.println("Choosing 3 separators ways to display recipe object:");
+        System.out.println("\t1) Blank Line Separator");
+        System.out.println("\t2) Dash Line Separator");
+        System.out.println("\t3) Binary Separator");
+        System.out.println("Enter from 1 to 3: ");
+        choice[0] = scanner.nextInt();
+        Separator separator = null;
+
+        switch (choice[0]) {
+            case 1:
+                separator = new SpaceSeparator();
+                break;
+            case 2:
+                separator = new DashSeparator();
+                break;
+            case 3:
+                separator = new BinarySeparator();
+                break;
+            default:
+                System.out.println("Invalid Input!");
+        }
 
         System.out.println("Choosing 3 attractive ways to display recipe object:");
         System.out.println("\t1) Casual Display");
         System.out.println("\t2) Serious Display");
         System.out.println("\t3) Hacker Display");
         System.out.println("Enter from 1 to 3: ");
-        int choice = scanner.nextInt();
-        RecipeDisplay recipeDisplay;
-        switch (choice) {
+        choice[0] = scanner.nextInt();
+        RecipeDisplay recipeDisplay = null;
+
+        switch (choice[0]) {
             case 1:
                 recipeDisplay = new RecipeCasualDisplay(recipe);
-                recipeDisplay.display();
+                recipeDisplay.display(separator);
                 break;
             case 2:
                 recipeDisplay = new RecipeSeriousDisplay(recipe);
-                recipeDisplay.display();
+                recipeDisplay.display(separator);
                 break;
             case 3:
                 recipeDisplay = new RecipeHackerDisplay(recipe);
-                recipeDisplay.display();
+                recipeDisplay.display(separator);
                 break;
             default:
                 System.out.println("Invalid Input!");
         }
-
-
-
-
 
       /*  for(int i = 0; i < 3; i++) {
             recipe.addComponent();
